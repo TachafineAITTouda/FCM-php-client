@@ -1,0 +1,27 @@
+
+//send notification to one device and pass parameters to the intent activity
+{
+    "notification": {
+        "title": "Your Title",
+        "body": "Your Text",
+        "click_action": "OPEN_ACTIVITY_1" 
+    },
+    "data": {
+        "keyname": "any value " 
+    },
+    "to": "diz-7I0LRYSbj79270C65M:APA91bGNaRwNKsw2XqqPseACLrEQXgDMa5A2S3DdM5PxrcgRUqCtnkvIukLCXf0NGxM4ME3dVihHp63GBWSDByGqhggO3zzwreQydIY95pjJ1xFwniQhRmjfIMW-LoH1USkUePLspLTr"
+}
+
+//send notification to multiple devices
+{
+    "notification": {
+        "title": "Your Title",
+        "body": "Your Text",
+        "click_action": "OPEN_ACTIVITY_1" 
+    },
+    //data passed with the notification it can be retrieved in the activity from the application side
+    "data": {
+        "keyname": "any value you want to send and you can get it from the activity parameters" 
+    },
+    "registration_ids":["diz-7I0LRYSbj79270C65M:APA91bGNaRwNKsw2XqqPseACLrEQXgDMa5A2S3DdM5PxrcgRUqCtnkvIukLCXf0NGxM4ME3dVihHp63GBWSDByGqhggO3zzwreQydIY95pjJ1xFwniQhRmjfIMW-LoH1USkUePLspLTr"]
+}
