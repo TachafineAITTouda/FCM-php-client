@@ -1,5 +1,7 @@
-var axios = require('axios');
-var data = JSON.stringify({
+const axios = require('axios');
+require('dotenv').config()
+
+const data = JSON.stringify({
   "notification": {
     "title": "Your Title",
     "body": "Your Text",
@@ -13,11 +15,11 @@ var data = JSON.stringify({
   ]
 });
 
-var config = {
+const config = {
   method: 'post',
   url: 'https://fcm.googleapis.com/fcm/send',
   headers: { 
-    'Authorization': 'key=AAAAN-cKehw:APA91bHkgufUsjGsLzj6EL9ziObw49Mcmau0-ZyN0xtnDplReMtrsXS4megw18kvc1xRe8oPv9wYgeIgr9P7KFqY6qCoNyaeCuOXbajgU9D5bTVBiLrCzFR1DND8OhAVJkfI6Apqt5IZ\t', 
+    'Authorization': 'key='+process.env.FIREBASE_CLOUD_MESSAGING_SERVICE_TOKEN+'\t', 
     'Content-Type': 'application/json'
   },
   data : data

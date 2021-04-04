@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "follow-redirects": "^1.13.3"
   },
   "devDependencies": {},
